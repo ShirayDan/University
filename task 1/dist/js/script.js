@@ -1,0 +1,1 @@
+function quickSort(n){if(n.length<2)return n;var t=n.length-1,r=n[Math.floor(1+Math.random()*(1+t-1))],o=[],c=[];n.splice(n.indexOf(r),1),n=[r].concat(n);for(let t=1;t<n.length;t++)(r>n[t]?o:c).push(n[t]);return quickSort(o).concat(r,quickSort(c))}
